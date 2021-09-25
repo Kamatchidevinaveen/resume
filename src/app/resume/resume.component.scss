@@ -1,0 +1,35 @@
+.container {
+  width: 100% !important;
+  height: 900px !important;
+}
+
+.first {
+  background-color: #dff6e89e !important;
+}
+
+.second {
+  background-color: #bfcfb69c !important;
+}
+
+.card {
+  margin-top: 140px !important;
+  height: 750px !important;
+  background-color: #cedbc1 !important;
+}
+
+.divider {
+  border: 1px #b2b6a6 solid;
+  margin-bottom: 5px !important;
+}
+
+.photo {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/img/kamatchi-1.jpg");
+  background-color: #4f6dcebf;
+}
+
+mat-card {
+  padding: 0px !important;
+}

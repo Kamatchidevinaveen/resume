@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -94,6 +95,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -127,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "resume"
+  "defaultProject": "resume",
+  "cli": {
+    "analytics": "f9d152d0-b84c-4888-8ee3-1ed8e1efc2bd"
+  }
 }
