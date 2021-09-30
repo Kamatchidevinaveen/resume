@@ -12,9 +12,16 @@
 }
 
 .card {
-  margin-top: 140px !important;
-  height: 750px !important;
+  height: 900px;
   background-color: #cedbc1 !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 320px) {
+  .card {
+    margin-top: 0px !important;
+  }
 }
 
 .divider {
@@ -28,8 +35,39 @@
   background-repeat: no-repeat;
   background-image: url("/assets/img/kamatchi-1.jpg");
   background-color: #4f6dcebf;
+  height: 300px;
 }
 
 mat-card {
   padding: 0px !important;
 }
+
+.mat-icon {
+  font-size: 21px !important;
+}
+
+// .card :not(.highlight-card) {
+//   cursor: pointer;
+// }
+// .card :not(.highlight-card):hover {
+//   transform: translateY(-3px);
+//   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+// }
+
+// .card .card:not(.highlight-card):hover .material-icons path {
+//   fill: rgb(105, 103, 103);
+// }
+
+// .highlight-card {
+//   background-color: #1976d2;
+//   color: white;
+//   font-weight: 600;
+//   border: none;
+//   width: auto;
+//   min-width: 30%;
+//   position: relative;
+// }
+
+// highlight-card span {
+//   margin-left: 60px;
+// }

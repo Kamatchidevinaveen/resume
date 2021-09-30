@@ -1,10 +1,5 @@
-<div fxLayout="column" class="container">
-  <div
-    fxFlex.lg="70"
-    fxFlex.xs="100"
-    fxLayoutAlign="center center"
-    class="first"
-  >
+<div class="container">
+  <div fxLayoutAlign="center center" class="first">
     <mat-card
       class="card"
       fxLayout.lg="row"
@@ -12,9 +7,15 @@
       fxFlex.lg="50"
       fxFlex.xs="100"
     >
-      <div fxFlex.lg="35" fxFlex.xs="100" fxLayout="column">
-        <div fxFlex.lg="60" fxFlex.xs="100" class="photo" fxFlexFill.xs></div>
-        <div fxFlex.lg fxFlex.xs="100" style="padding: 16px">
+      <div
+        fxFlex.lg="35"
+        fxFlex.xs="100"
+        fxLayout.lg="column"
+        fxLayout.xs="column"
+        style="background-color: rgb(215 234 202 / 89%)"
+      >
+        <div fxFlex.lg="30" fxFlex.xs="100" class="photo"></div>
+        <div fxFlex.lg="70" fxFlex.xs="100" style="padding: 16px">
           <p style="color: #979393; font-weight: bold; font-size: 17px">
             Summary
           </p>
@@ -26,10 +27,34 @@
             elevation of user experience to the next level will be vigorously
             pursued.
           </h4>
+          <p style="color: #979393; font-weight: bold; font-size: 17px">
+            CONTACTS
+          </p>
+          <div class="divider"></div>
+          <h4
+            style="color: white"
+            fxLayout="column wrap"
+            fxLayoutGap="20px"
+            transform="translate(-4634.008 -355.852)"
+          >
+            <span
+              ><mat-icon>person_pin_circle</mat-icon>Semmankuli street,
+              M.vadipatti, Dindigul (dist). 624211</span
+            >
+            <span
+              ><mat-icon>alternate_email</mat-icon
+              >kamatchidevi97@gmail.com</span
+            >
+            <span><mat-icon>call</mat-icon>+91 8220487432</span>
+            <span
+              ><mat-icon>public</mat-icon
+              >https://www.linkedin.com/in/kamatchi-devi-89a3b1144/</span
+            >
+          </h4>
         </div>
       </div>
-      <div fxFlex.lg fxFlex.xs="100">yyy</div>
+      <div fxFlex.lg fxFlex.xs="100">KAMATCHIDEVI MADURAIVEERAN</div>
     </mat-card>
   </div>
-  <div fxFlex class="second"></div>
+  <!-- <div fxFlex class="second"></div> -->
 </div>
