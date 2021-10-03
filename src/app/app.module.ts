@@ -8,6 +8,7 @@ import { MaterialModule } from './material-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutModule } from '@angular/cdk/layout';
+import { FlipModule } from 'ngx-flip';
 @NgModule({
   declarations: [AppComponent, ResumeComponent],
   imports: [
@@ -17,6 +18,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     BrowserAnimationsModule,
     FlexLayoutModule,
     LayoutModule,
+    FlipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

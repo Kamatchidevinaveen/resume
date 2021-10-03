@@ -43,7 +43,7 @@ mat-card {
 }
 
 .mat-icon {
-  font-size: 21px !important;
+  font-size: 18px !important;
 }
 
 // .card :not(.highlight-card) {
@@ -71,3 +71,35 @@ mat-card {
 // highlight-card span {
 //   margin-left: 60px;
 // }
+
+.name {
+  font-size: 28px !important;
+  margin-bottom: 13px !important;
+}
+
+@media (max-width: 360px) {
+  .name {
+    font-size: 14px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+ngx-flip {
+  height: 200px;
+  width: 200px;
+}
+.front {
+  background-color: lightgreen;
+  height: 115px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back {
+  background-color: lightblue;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

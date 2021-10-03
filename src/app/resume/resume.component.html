@@ -14,7 +14,7 @@
         fxLayout.xs="column"
         style="background-color: rgb(215 234 202 / 89%)"
       >
-        <div fxFlex.lg="30" fxFlex.xs="100" class="photo"></div>
+        <div fxFlex.lg="60" fxFlex.xs="100" class="photo"></div>
         <div fxFlex.lg="70" fxFlex.xs="100" style="padding: 16px">
           <p style="color: #979393; font-weight: bold; font-size: 17px">
             Summary
@@ -37,23 +37,74 @@
             fxLayoutGap="20px"
             transform="translate(-4634.008 -355.852)"
           >
-            <span
+            <!-- <span
               ><mat-icon>person_pin_circle</mat-icon>Semmankuli street,
               M.vadipatti, Dindigul (dist). 624211</span
-            >
+            > -->
             <span
               ><mat-icon>alternate_email</mat-icon
               >kamatchidevi97@gmail.com</span
             >
             <span><mat-icon>call</mat-icon>+91 8220487432</span>
-            <span
+            <!-- <span
               ><mat-icon>public</mat-icon
               >https://www.linkedin.com/in/kamatchi-devi-89a3b1144/</span
-            >
+            > -->
           </h4>
         </div>
       </div>
-      <div fxFlex.lg fxFlex.xs="100">KAMATCHIDEVI MADURAIVEERAN</div>
+      <div
+        fxFlex.lg
+        fxFlex.xs="100"
+        fxLayout="column"
+        style="background-color: rgb(242 250 243)"
+      >
+        <div fxFlex="13" fxLayout="column" fxLayoutAlign="center center">
+          <div class="name">KAMATCHIDEVI MADURAIVEERAN</div>
+          <div>3+ years of experience in Software Design and Development</div>
+        </div>
+        <div class="divider"></div>
+        <div fxFlex style="padding: 20px">
+          <p style="color: #979393; font-weight: bold; font-size: 17px">
+            Experience
+          </p>
+          <ul>
+            <li>
+              <p>
+                <b>VIT Infotech</b>, Bangalore - <i><b>Software Engineer</b></i>
+              </p>
+              <p style="font-size: 12px">July 2018 - present</p>
+            </li>
+          </ul>
+          <p style="color: #979393; font-weight: bold; font-size: 17px">
+            Education
+          </p>
+          <ul>
+            <li>
+              <p>
+                <b>Anna University</b>, Chennai - <i><b>BE CSE</b></i>
+              </p>
+              <p style="font-size: 12px">August 2014 - August 2018</p>
+            </li>
+          </ul>
+          <p style="color: #979393; font-weight: bold; font-size: 17px">
+            Projects
+          </p>
+          <ngx-flip [flip]="flip">
+            <div front class="front">
+              <ul>
+                <li>
+                  <p>
+                    <b>HRMS web</b> - <i><b>Angular 8 - java 11</b></i>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div back>Back</div>
+          </ngx-flip>
+          <button (click)="rotate()">Flip</button>
+        </div>
+      </div>
     </mat-card>
   </div>
   <!-- <div fxFlex class="second"></div> -->
