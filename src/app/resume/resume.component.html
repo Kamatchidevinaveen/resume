@@ -90,19 +90,32 @@
           <p style="color: #979393; font-weight: bold; font-size: 17px">
             Projects
           </p>
-          <ngx-flip [flip]="flip">
-            <div front class="front">
-              <ul>
-                <li>
-                  <p>
-                    <b>HRMS web</b> - <i><b>Angular 8 - java 11</b></i>
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div back>Back</div>
-          </ngx-flip>
-          <button (click)="rotate()">Flip</button>
+          <ul>
+            <li>
+              <b>HRMS - Human Resource Management System</b> -
+              <i>Angular 8 - java 11</i>
+            </li>
+            <li>
+              <b> WMS - Warehouse Management System</b> -
+              <i>Angular 6 and Java 8</i>
+            </li>
+            <li>
+              <b> UMS - University Management System </b> -
+              <i>
+                <i>Angular 10 - java 11</i>
+              </i>
+            </li>
+          </ul>
+          <p style="color: #979393; font-weight: bold; font-size: 17px">
+            Skills
+          </p>
+          <ngx-charts-pie-grid
+            [view]="view"
+            [results]="single"
+            (select)="onSelect($event)"
+          >
+          </ngx-charts-pie-grid>
+          <!-- [scheme]="colorScheme" -->
         </div>
       </div>
     </mat-card>

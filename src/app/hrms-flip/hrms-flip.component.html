@@ -1,0 +1,36 @@
+<ngx-flip [flip]="flip" fxLayout="column">
+  <div front class="front">
+    <ul>
+      <li>
+        Development of an Enterprise application for Human resources management.
+        This system provides many services features of recruitment, employee
+        self-service, grievance management, training and operations management.
+      </li>
+    </ul>
+    <button (click)="rotate()">Flip</button>
+  </div>
+  <div back class="back">
+    <ul>
+      <li>
+        Implemented web pages for creating dump components on angular-forms and
+        code generalization.
+      </li>
+      <li>
+        Implemented onboarding, relieve, leave and roster calendar features.
+      </li>
+      <li>Implemented REST API'S for transaction functionalities.</li>
+      <li>Used PostgreSql database for data management.</li>
+    </ul>
+    <div>
+      <mat-chip-list>
+        <mat-chip class="chipStyle" selected>Angular 8</mat-chip>
+        <mat-chip class="chipStyle" selected>Java 11</mat-chip>
+        <mat-chip class="chipStyle" selected>Spring-boot 2.1.6</mat-chip>
+        <mat-chip class="chipStyle" selected>Hibernate 5.3.10</mat-chip>
+        <mat-chip class="chipStyle" selected>Typescript</mat-chip>
+        <mat-chip class="chipStyle" selected>PostgreSQL 9.5</mat-chip>
+      </mat-chip-list>
+    </div>
+    <button (click)="rotate()">Flip</button>
+  </div>
+</ngx-flip>

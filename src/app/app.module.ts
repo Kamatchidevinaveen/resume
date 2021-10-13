@@ -9,8 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlipModule } from 'ngx-flip';
+import { HrmsFlipComponent } from './hrms-flip/hrms-flip.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+
 @NgModule({
-  declarations: [AppComponent, ResumeComponent],
+  declarations: [AppComponent, ResumeComponent, HrmsFlipComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -19,6 +22,7 @@ import { FlipModule } from 'ngx-flip';
     FlexLayoutModule,
     LayoutModule,
     FlipModule,
+    NgxChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

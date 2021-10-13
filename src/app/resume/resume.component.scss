@@ -84,22 +84,6 @@ mat-card {
   }
 }
 
-ngx-flip {
-  height: 200px;
-  width: 200px;
-}
-.front {
-  background-color: lightgreen;
-  height: 115px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.back {
-  background-color: lightblue;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+li {
+  padding-bottom: 10px;
 }
