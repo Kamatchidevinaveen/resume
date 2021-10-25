@@ -19,3 +19,16 @@
 .chipStyle {
   background-color: #569a738f !important;
 }
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.scroll-container {
+  position: relative;
+}
+
+.scrollable-content {
+  padding: 16px;
+  margin: 0;
+}

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { HrmsFlipComponent } from '../hrms-flip/hrms-flip.component';
 
 @Component({
   selector: 'app-resume',
@@ -15,22 +17,22 @@ export class ResumeComponent implements OnInit {
       name: 'USA',
       value: 5000000,
     },
-    {
-      name: 'France',
-      value: 7200000,
-    },
-    {
-      name: 'UK',
-      value: 6200000,
-    },
-    {
-      name: 'Italy',
-      value: 4200000,
-    },
-    {
-      name: 'Spain',
-      value: 8200000,
-    },
+    // {
+    //   name: 'France',
+    //   value: 7200000,
+    // },
+    // {
+    //   name: 'UK',
+    //   value: 6200000,
+    // },
+    // {
+    //   name: 'Italy',
+    //   value: 4200000,
+    // },
+    // {
+    //   name: 'Spain',
+    //   value: 8200000,
+    // },
   ];
   view: [number, number] = [500, 400];
 
@@ -42,10 +44,17 @@ export class ResumeComponent implements OnInit {
   //   domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5'],
   // };
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
-  onSelect(event: any) {
-    console.log(event);
+  onClick() {
+    const dialogRef = this.dialog.open(HrmsFlipComponent, {
+      width: '650px',
+      height: '580px',
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('The dialog was closed');
+    });
   }
 
   ngOnInit(): void {}

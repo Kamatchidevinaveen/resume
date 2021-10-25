@@ -1,36 +1,69 @@
-<ngx-flip [flip]="flip" fxLayout="column">
-  <div front class="front">
-    <ul>
-      <li>
-        Development of an Enterprise application for Human resources management.
-        This system provides many services features of recruitment, employee
-        self-service, grievance management, training and operations management.
-      </li>
-    </ul>
-    <button (click)="rotate()">Flip</button>
+<mat-toolbar style="background-color: rgb(144 210 153 / 75%)">
+  <span>HRMS</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="example-icon" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-toolbar>
+<!-- <mat-dialog-content> -->
+<div style="padding: 10px">
+  <!-- <ngx-flip [flip]="flip"> -->
+  <!-- <div front> -->
+  <!-- <div fxLayout="column" fxLayoutAlign="center center"> -->
+  <ul>
+    <li>
+      Development of an Enterprise application for Human resources management.
+      This system provides many services features of recruitment, employee
+      self-service, grievance management, training and operations management.
+    </li>
+    <li>
+      Implemented web pages for creating dump components on angular-forms and
+      code generalization.
+    </li>
+    <li>
+      Implemented onboarding, relieve, leave and roster calendar features.
+    </li>
+    <li>Implemented REST API'S for transaction functionalities.</li>
+    <li>Used PostgreSql database for data management.</li>
+  </ul>
+  <!-- <button (click)="rotate()">Technologies</button> -->
+  <!-- </div> -->
+  <!-- </div>
+    <div back> -->
+  <div>
+    <ngx-charts-pie-chart
+      fxShow.lg
+      fxHide.xs
+      [view]="view"
+      [results]="single"
+      [gradient]="gradient"
+      [legend]="showLegend"
+      [legendPosition]="legendPosition"
+      [labels]="showLabels"
+      [doughnut]="isDoughnut"
+      (select)="onSelect($event)"
+      (activate)="onActivate($event)"
+      (deactivate)="onDeactivate($event)"
+    >
+    </ngx-charts-pie-chart>
+    <ngx-charts-pie-chart
+      fxShow.xs
+      fxHide.lg
+      [view]="view_1"
+      [results]="single"
+      [gradient]="gradient"
+      [legend]="showLegend"
+      [legendPosition]="legendPosition_1"
+      [labels]="showLabels"
+      [doughnut]="isDoughnut"
+      (select)="onSelect($event)"
+      (activate)="onActivate($event)"
+      (deactivate)="onDeactivate($event)"
+    >
+    </ngx-charts-pie-chart>
   </div>
-  <div back class="back">
-    <ul>
-      <li>
-        Implemented web pages for creating dump components on angular-forms and
-        code generalization.
-      </li>
-      <li>
-        Implemented onboarding, relieve, leave and roster calendar features.
-      </li>
-      <li>Implemented REST API'S for transaction functionalities.</li>
-      <li>Used PostgreSql database for data management.</li>
-    </ul>
-    <div>
-      <mat-chip-list>
-        <mat-chip class="chipStyle" selected>Angular 8</mat-chip>
-        <mat-chip class="chipStyle" selected>Java 11</mat-chip>
-        <mat-chip class="chipStyle" selected>Spring-boot 2.1.6</mat-chip>
-        <mat-chip class="chipStyle" selected>Hibernate 5.3.10</mat-chip>
-        <mat-chip class="chipStyle" selected>Typescript</mat-chip>
-        <mat-chip class="chipStyle" selected>PostgreSQL 9.5</mat-chip>
-      </mat-chip-list>
+  <!-- <button (click)="rotate()">Flip</button>
     </div>
-    <button (click)="rotate()">Flip</button>
-  </div>
-</ngx-flip>
+  </ngx-flip> -->
+</div>
+<!-- </mat-dialog-content> -->

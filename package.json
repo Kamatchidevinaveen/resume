@@ -38,6 +38,7 @@
     "font-awesome": "^4.7.0",
     "ng-media-query": "^1.0.3",
     "ngx-flip": "^9.0.0",
+    "ngx-perfect-scrollbar": "^10.1.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

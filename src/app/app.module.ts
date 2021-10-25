@@ -24,7 +24,8 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     FlipModule,
     NgxChartsModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
+  exports: [FlipModule],
+  providers: [],
 })
 export class AppModule {}
