@@ -127,17 +127,45 @@
               <li>
                 <b> WMS - Warehouse Management System</b> -
                 <i>Angular 6 and Java 8</i>
+                <mat-chip-list>
+                  <mat-chip
+                    style="background-color: #569a738f !important"
+                    selected
+                    (click)="onClickWMS()"
+                    >Details</mat-chip
+                  >
+                </mat-chip-list>
               </li>
               <li>
                 <b> UMS - University Management System </b> -
-                <i>
-                  <i>Angular 10 - java 11</i>
-                </i>
+                <i>Angular 10 - java 11</i>
+                <mat-chip-list>
+                  <mat-chip
+                    style="background-color: #569a738f !important"
+                    selected
+                    (click)="onClickUMS()"
+                    >Details</mat-chip
+                  >
+                </mat-chip-list>
               </li>
             </ul>
             <p style="color: #979393; font-weight: bold; font-size: 17px">
               Skills
             </p>
+            <ngx-charts-bar-vertical
+              [view]="view"
+              [results]="single"
+              [gradient]="gradient"
+              [xAxis]="showXAxis"
+              [yAxis]="showYAxis"
+              [legend]="showLegend"
+              [showXAxisLabel]="showXAxisLabel"
+              [showYAxisLabel]="showYAxisLabel"
+              [xAxisLabel]="xAxisLabel"
+              [yAxisLabel]="yAxisLabel"
+              (select)="onSelect($event)"
+            >
+            </ngx-charts-bar-vertical>
             <!-- <ngx-charts-pie-grid
               [view]="view"
               [results]="single"

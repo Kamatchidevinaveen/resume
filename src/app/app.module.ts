@@ -11,9 +11,17 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { FlipModule } from 'ngx-flip';
 import { HrmsFlipComponent } from './hrms-flip/hrms-flip.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { WmsComponent } from './wms/wms.component';
+import { UmsComponent } from './ums/ums.component';
 
 @NgModule({
-  declarations: [AppComponent, ResumeComponent, HrmsFlipComponent],
+  declarations: [
+    AppComponent,
+    ResumeComponent,
+    HrmsFlipComponent,
+    WmsComponent,
+    UmsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,7 +33,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     NgxChartsModule,
   ],
   bootstrap: [AppComponent],
-  exports: [FlipModule],
+  exports: [HrmsFlipComponent, WmsComponent, UmsComponent],
   providers: [],
 })
 export class AppModule {}

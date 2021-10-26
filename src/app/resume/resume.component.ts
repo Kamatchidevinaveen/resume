@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { HrmsFlipComponent } from '../hrms-flip/hrms-flip.component';
+import { UmsComponent } from '../ums/ums.component';
+import { WmsComponent } from '../wms/wms.component';
 
 @Component({
   selector: 'app-resume',
@@ -10,35 +12,50 @@ import { HrmsFlipComponent } from '../hrms-flip/hrms-flip.component';
 export class ResumeComponent implements OnInit {
   single = [
     {
-      name: 'Germany',
-      value: 8940000,
+      name: 'Angular 6, 8, 10',
+      value: 5,
     },
     {
-      name: 'USA',
-      value: 5000000,
+      name: 'Flex Layout & Angular Material',
+      value: 5,
     },
-    // {
-    //   name: 'France',
-    //   value: 7200000,
-    // },
-    // {
-    //   name: 'UK',
-    //   value: 6200000,
-    // },
-    // {
-    //   name: 'Italy',
-    //   value: 4200000,
-    // },
-    // {
-    //   name: 'Spain',
-    //   value: 8200000,
-    // },
+    {
+      name: 'Java 11',
+      value: 4,
+    },
+    {
+      name: 'Hibernate',
+      value: 4,
+    },
+    {
+      name: 'MySQL',
+      value: 5,
+    },
+    {
+      name: 'PostgreSQL',
+      value: 5,
+    },
+    {
+      name: 'Spring boot',
+      value: 4,
+    },
   ];
-  view: [number, number] = [500, 400];
+
+  view: [number, number] = [300, 300];
 
   // options
-  showLegend: boolean = true;
-  showLabels: boolean = true;
+  showXAxis = true;
+  showYAxis = true;
+  gradient = false;
+  showLegend = false;
+  showXAxisLabel = true;
+  xAxisLabel = 'Technologies';
+  showYAxisLabel = true;
+  yAxisLabel = 'Rating';
+
+  colorScheme = {
+    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA'],
+  };
 
   // colorScheme = {
   //   domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5'],
@@ -55,6 +72,32 @@ export class ResumeComponent implements OnInit {
     dialogRef.afterClosed().subscribe((result) => {
       console.log('The dialog was closed');
     });
+  }
+
+  onClickWMS() {
+    const dialogRef = this.dialog.open(WmsComponent, {
+      width: '650px',
+      height: '580px',
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  onClickUMS() {
+    const dialogRef = this.dialog.open(UmsComponent, {
+      width: '650px',
+      height: '580px',
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  onSelect(event: any) {
+    console.log(event);
   }
 
   ngOnInit(): void {}
