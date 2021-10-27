@@ -8,16 +8,19 @@
       fxFlex.xs="100"
     >
       <div fxLayout="row">
-        <div class="image"></div>
+        <div fxShow.lg fxHide.xs class="image"></div>
+        <div fxShow.xs fxHide.lg class="image-1"></div>
         <div
           fxLayout="column"
           fxLayoutAlign="center center"
           style="padding: 15px 0px 10px 57px"
         >
           <div fxShow.lg fxHide.xs class="name">KAMATCHIDEVI MADURAIVEERAN</div>
-          <div fxShow.xs fxHide.lg class="name">KAMATCHIDEVI. M</div>
+          <div fxShow.xs fxHide.lg class="name">KAMATCHIDEVI</div>
           <div fxShow.lg fxHide.xs>
-            <i>3+ years of experience in Software Design and Development</i>
+            <i style="color: white"
+              >3+ years of experience in Software Design and Development</i
+            >
           </div>
         </div>
       </div>
@@ -37,8 +40,7 @@
             >
               Summary
             </p>
-            <!-- <div class="divider"></div> -->
-            <h4 style="color: white; padding: 10px">
+            <h4 style="color: #16747494; padding: 10px">
               With a strong technical skill-set, attention to detail, and 3+
               years of Information technology experience, individual wants to
               work as a Full Stack Developer where creation of digital magic and
@@ -46,45 +48,55 @@
               pursued.
             </h4>
             <p
+              fxShow.lg
+              fxHide.xs
               style="color: #979393; font-weight: bold; font-size: 17px"
               class="design"
             >
               Contacts
             </p>
-            <!-- <div class="divider"></div> -->
             <h4
-              style="color: white; padding: 10px"
+              fxShow.lg
+              fxHide.xs
+              style="color: #928815d6; padding: 10px"
               fxLayout="column wrap"
               fxLayoutGap="20px"
               transform="translate(-4634.008 -355.852)"
             >
               <span
-                ><mat-icon>person_pin_circle</mat-icon>Semmankuli street,
-                M.vadipatti, Dindigul (dist). 624211</span
+                ><mat-icon style="color: #0d8894">person_pin_circle</mat-icon
+                >Semmankuli street, M.vadipatti, Dindigul (dist). 624211</span
               >
               <span
-                ><mat-icon>alternate_email</mat-icon
+                ><mat-icon style="color: #0d8894">alternate_email</mat-icon
                 >kamatchidevi97@gmail.com</span
               >
-              <span><mat-icon>call</mat-icon>+91 8220487432</span>
+              <span
+                ><mat-icon style="color: #0d8894">call</mat-icon>+91
+                8220487432</span
+              >
               <span> https://www.linkedin.com/in/kamatchi-devi-89a3b1144/</span>
             </h4>
 
             <p
               style="color: #979393; font-weight: bold; font-size: 17px"
               class="design"
+              fxShow.lg
+              fxHide.xs
             >
               Languages
             </p>
             <h4
-              style="color: white; padding: 10px"
+              fxShow.lg
+              fxHide.xs
+              style="color: #a23716; padding: 10px"
               fxLayout="column wrap"
               fxLayoutGap="20px"
               transform="translate(-4634.008 -355.852)"
             >
               <ul>
-                <li>Tamil</li>
-                <li>English</li>
+                <li style="font-weight: 600">Tamil</li>
+                <li style="font-weight: 600">English</li>
               </ul>
             </h4>
           </div>
@@ -94,52 +106,64 @@
           fxFlex.xs="100"
           fxLayout.lg="column"
           fxLayout.xs="row"
-          style="background-color: rgb(242 250 243)"
+          style="background-color: rgb(242 250 243); padding-top: 5px"
         >
-          <div style="padding: 10px 0px 0px 20px">
+          <div>
             <p
               style="color: #979393; font-weight: bold; font-size: 17px"
               class="design"
             >
               Experience
             </p>
-            <ul>
-              <li>
-                <p>
-                  <b>VIT Infotech</b>, Bangalore -
-                  <i><b>Software Engineer</b></i>
-                </p>
-                <p style="font-size: 12px">July 2018 - present</p>
-              </li>
-            </ul>
+            <p style="padding: 10px 0px 0px 40px">
+              <mat-icon style="color: #0d8894">work</mat-icon>
+              <b style="color: #ca7e18">VIT Infotech</b>, Bangalore -
+              <i><b>Software Engineer</b></i>
+            </p>
+            <p
+              style="
+                font-size: 12px;
+                padding: 10px 0px 0px 62px;
+                font-weight: 600;
+              "
+            >
+              July 2018 - present
+            </p>
             <p
               style="color: #979393; font-weight: bold; font-size: 17px"
               class="design"
             >
               Education
             </p>
-            <ul>
-              <li>
-                <p>
-                  <b>Velammal College of Engineering and Technology</b>, Madurai
-                  - <i><b>BE CSE</b></i>
-                </p>
-                <p style="font-size: 12px">August 2014 - August 2018</p>
-              </li>
-            </ul>
+            <p style="padding: 10px 0px 0px 40px">
+              <mat-icon style="color: #0d8894">school</mat-icon>
+              <b style="color: #ca7e18"
+                >Velammal College of Engineering and Technology</b
+              >, Madurai - <i><b>BE CSE</b></i>
+            </p>
+            <p
+              style="
+                font-size: 12px;
+                padding: 10px 0px 0px 62px;
+                font-weight: 600;
+              "
+            >
+              August 2014 - August 2018
+            </p>
             <p
               style="color: #979393; font-weight: bold; font-size: 17px"
               class="design"
             >
               Projects
             </p>
-            <ul>
+            <ul style="padding: 10px 0px 0px 40px">
               <li>
-                <b>HRMS - Human Resource Management System</b> -
+                <b>HRMS - Human Resource Management System</b>
+                -
                 <i>Angular 8 - java 11</i>
                 <mat-chip-list>
                   <mat-chip
-                    style="background-color: #569a738f !important"
+                    style="background-color: #166638 !important"
                     selected
                     (click)="onClick()"
                     >Details</mat-chip
@@ -148,11 +172,12 @@
               </li>
 
               <li>
-                <b> WMS - Warehouse Management System</b> -
+                <b> WMS - Warehouse Management System</b>
+                -
                 <i>Angular 6 and Java 8</i>
                 <mat-chip-list>
                   <mat-chip
-                    style="background-color: #569a738f !important"
+                    style="background-color: #166638 !important"
                     selected
                     (click)="onClickWMS()"
                     >Details</mat-chip
@@ -160,11 +185,12 @@
                 </mat-chip-list>
               </li>
               <li>
-                <b> UMS - University Management System </b> -
+                <b> UMS - University Management System </b>
+                -
                 <i>Angular 10 - java 11</i>
                 <mat-chip-list>
                   <mat-chip
-                    style="background-color: #569a738f !important"
+                    style="background-color: #166638 !important"
                     selected
                     (click)="onClickUMS()"
                     >Details</mat-chip
@@ -173,12 +199,64 @@
               </li>
             </ul>
             <p
+              fxShow.xs
+              fxHide.lg
+              style="color: #979393; font-weight: bold; font-size: 17px"
+              class="design"
+            >
+              Contacts
+            </p>
+            <h4
+              fxShow.xs
+              fxHide.lg
+              style="color: #928815d6; padding: 10px"
+              fxLayout="column wrap"
+              fxLayoutGap="20px"
+              transform="translate(-4634.008 -355.852)"
+            >
+              <span
+                ><mat-icon style="color: #0d8894">person_pin_circle</mat-icon
+                >Semmankuli street, M.vadipatti, Dindigul (dist). 624211</span
+              >
+              <span
+                ><mat-icon style="color: #0d8894">alternate_email</mat-icon
+                >kamatchidevi97@gmail.com</span
+              >
+              <span
+                ><mat-icon style="color: #0d8894">call</mat-icon>+91
+                8220487432</span
+              >
+              <span> https://www.linkedin.com/in/kamatchi-devi-89a3b1144/</span>
+            </h4>
+            <p
+              fxShow.xs
+              fxHide.lg
+              style="color: #979393; font-weight: bold; font-size: 17px"
+              class="design"
+            >
+              Languages
+            </p>
+            <h4
+              fxShow.xs
+              fxHide.lg
+              style="color: #a23716; padding: 10px"
+              fxLayout="column wrap"
+              fxLayoutGap="20px"
+              transform="translate(-4634.008 -355.852)"
+            >
+              <ul>
+                <li style="font-weight: 600">Tamil</li>
+                <li style="font-weight: 600">English</li>
+              </ul>
+            </h4>
+            <p
               style="color: #979393; font-weight: bold; font-size: 17px"
               class="design"
             >
               Skills
             </p>
             <ngx-charts-bar-vertical
+              style="padding: 10px 0px 0px 20px"
               fxShow.lg
               fxHide.xs
               [view]="view"
@@ -195,6 +273,7 @@
             >
             </ngx-charts-bar-vertical>
             <ngx-charts-bar-vertical
+              style="padding: 10px 0px 0px 20px"
               fxShow.xs
               fxHide.lg
               [view]="view_1"
@@ -210,16 +289,9 @@
               (select)="onSelect($event)"
             >
             </ngx-charts-bar-vertical>
-            <!-- <ngx-charts-pie-grid
-              [view]="view"
-              [results]="single"
-              (select)="onSelect($event)"
-            >
-            </ngx-charts-pie-grid> -->
           </div>
         </div>
       </div>
     </mat-card>
   </div>
-  <!-- <div fxFlex class="second"></div> -->
 </div>
