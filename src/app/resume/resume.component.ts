@@ -39,9 +39,26 @@ export class ResumeComponent implements OnInit {
       name: 'Spring boot',
       value: 4,
     },
+    {
+      name: 'Postman',
+      value: 5,
+    },
+    {
+      name: 'PgAdmin',
+      value: 5,
+    },
+    {
+      name: 'Eclipse',
+      value: 5,
+    },
+    {
+      name: 'Visual Studio Code',
+      value: 5,
+    },
   ];
 
-  view: [number, number] = [300, 300];
+  view: [number, number] = [400, 300];
+  view_1: [number, number] = [300, 300];
 
   // options
   showXAxis = true;

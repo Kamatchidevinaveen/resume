@@ -7,14 +7,18 @@
       fxFlex.lg="50"
       fxFlex.xs="100"
     >
-      <div
-        fxLayout="column"
-        fxLayoutAlign="center center"
-        style="padding: 15px 0px 10px 0px"
-      >
-        <div class="name">KAMATCHIDEVI MADURAIVEERAN</div>
-        <div>
-          <i>3+ years of experience in Software Design and Development</i>
+      <div fxLayout="row">
+        <div class="image"></div>
+        <div
+          fxLayout="column"
+          fxLayoutAlign="center center"
+          style="padding: 15px 0px 10px 57px"
+        >
+          <div fxShow.lg fxHide.xs class="name">KAMATCHIDEVI MADURAIVEERAN</div>
+          <div fxShow.xs fxHide.lg class="name">KAMATCHIDEVI. M</div>
+          <div fxShow.lg fxHide.xs>
+            <i>3+ years of experience in Software Design and Development</i>
+          </div>
         </div>
       </div>
       <div style="border: 0.5px #93a169 solid"></div>
@@ -26,24 +30,30 @@
           fxLayout.xs="row"
           style="background-color: rgb(215 234 202 / 89%)"
         >
-          <div fxFlex.lg="70" fxFlex.xs="100" style="padding: 16px">
-            <p style="color: #979393; font-weight: bold; font-size: 17px">
+          <div fxFlex.lg="70" fxFlex.xs="100" style="padding-top: 5px">
+            <p
+              style="color: #979393; font-weight: bold; font-size: 17px"
+              class="design"
+            >
               Summary
             </p>
             <!-- <div class="divider"></div> -->
-            <h4 style="color: white">
+            <h4 style="color: white; padding: 10px">
               With a strong technical skill-set, attention to detail, and 3+
               years of Information technology experience, individual wants to
-              work as a Front-end Web Developer where creation of digital magic
-              and elevation of user experience to the next level will be
-              vigorously pursued.
+              work as a Full Stack Developer where creation of digital magic and
+              elevation of user experience to the next level will be vigorously
+              pursued.
             </h4>
-            <p style="color: #979393; font-weight: bold; font-size: 17px">
+            <p
+              style="color: #979393; font-weight: bold; font-size: 17px"
+              class="design"
+            >
               Contacts
             </p>
             <!-- <div class="divider"></div> -->
             <h4
-              style="color: white"
+              style="color: white; padding: 10px"
               fxLayout="column wrap"
               fxLayoutGap="20px"
               transform="translate(-4634.008 -355.852)"
@@ -60,11 +70,14 @@
               <span> https://www.linkedin.com/in/kamatchi-devi-89a3b1144/</span>
             </h4>
 
-            <p style="color: #979393; font-weight: bold; font-size: 17px">
+            <p
+              style="color: #979393; font-weight: bold; font-size: 17px"
+              class="design"
+            >
               Languages
             </p>
             <h4
-              style="color: white"
+              style="color: white; padding: 10px"
               fxLayout="column wrap"
               fxLayoutGap="20px"
               transform="translate(-4634.008 -355.852)"
@@ -84,7 +97,10 @@
           style="background-color: rgb(242 250 243)"
         >
           <div style="padding: 10px 0px 0px 20px">
-            <p style="color: #979393; font-weight: bold; font-size: 17px">
+            <p
+              style="color: #979393; font-weight: bold; font-size: 17px"
+              class="design"
+            >
               Experience
             </p>
             <ul>
@@ -96,18 +112,25 @@
                 <p style="font-size: 12px">July 2018 - present</p>
               </li>
             </ul>
-            <p style="color: #979393; font-weight: bold; font-size: 17px">
+            <p
+              style="color: #979393; font-weight: bold; font-size: 17px"
+              class="design"
+            >
               Education
             </p>
             <ul>
               <li>
                 <p>
-                  <b>Anna University</b>, Chennai - <i><b>BE CSE</b></i>
+                  <b>Velammal College of Engineering and Technology</b>, Madurai
+                  - <i><b>BE CSE</b></i>
                 </p>
                 <p style="font-size: 12px">August 2014 - August 2018</p>
               </li>
             </ul>
-            <p style="color: #979393; font-weight: bold; font-size: 17px">
+            <p
+              style="color: #979393; font-weight: bold; font-size: 17px"
+              class="design"
+            >
               Projects
             </p>
             <ul>
@@ -149,11 +172,32 @@
                 </mat-chip-list>
               </li>
             </ul>
-            <p style="color: #979393; font-weight: bold; font-size: 17px">
+            <p
+              style="color: #979393; font-weight: bold; font-size: 17px"
+              class="design"
+            >
               Skills
             </p>
             <ngx-charts-bar-vertical
+              fxShow.lg
+              fxHide.xs
               [view]="view"
+              [results]="single"
+              [gradient]="gradient"
+              [xAxis]="showXAxis"
+              [yAxis]="showYAxis"
+              [legend]="showLegend"
+              [showXAxisLabel]="showXAxisLabel"
+              [showYAxisLabel]="showYAxisLabel"
+              [xAxisLabel]="xAxisLabel"
+              [yAxisLabel]="yAxisLabel"
+              (select)="onSelect($event)"
+            >
+            </ngx-charts-bar-vertical>
+            <ngx-charts-bar-vertical
+              fxShow.xs
+              fxHide.lg
+              [view]="view_1"
               [results]="single"
               [gradient]="gradient"
               [xAxis]="showXAxis"
